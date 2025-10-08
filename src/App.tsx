@@ -39,9 +39,9 @@ function App() {
 
 
   return (
-    <div className='relative h-screen overflow-y-auto'>
+    <div className='relative h-screen w-full overflow-x-hidden'>
     <SplashCursor />
-    <div className='w-full h-full fixed top-0'>
+    <div className='w-full h-screen fixed top-0'>
       <Aurora 
         colorStops={["#7CFF67", "#B19EFF", "#5227FF"]}
         blend={0.5}
