@@ -37,6 +37,7 @@ function App() {
   }
 ];
 
+
   return (
     <div className='relative h-screen overflow-y-auto'>
     <SplashCursor />
@@ -60,30 +61,41 @@ function App() {
       animationDuration={0.5}
       staggerDelay={0.12}
     />
-    <div className='w-full h-full flex flex-col justify-center items-center gap-5'>
-      <SplitText
-      text="Hello, I'm Özlem Engin Sağır!"
-      className="text-5xl font-semibold text-center text-white leading-15"
-      delay={100}
-      duration={0.6}
-      ease="power3.out"
-      splitType="chars"
-      from={{ opacity: 0, y: 40 }}
-      to={{ opacity: 1, y: 0 }}
-      threshold={0.1}
-      rootMargin="-500px"
-      textAlign="center"
-    />
-    <TextType 
-        text={["<I'm a Frontend Developer./>","<Nice to meet you!/>"]}
-        className="text-4xl font-semibold text-center text-white"
-        typingSpeed={75}
-        pauseDuration={1500}
-        showCursor={true}
-        cursorCharacter="|"
-      />
-    </div>
+    <div className='w-full h-full flex flex-col justify-center items-center gap-20'>
+      <div className='flex flex-col justify-center items-center gap-5'>
+         <SplitText
+            text="Hello, I'm Özlem Engin Sağır!"
+            className="text-5xl font-semibold text-center text-white leading-15"
+            delay={100}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-500px"
+            textAlign="center"
+          />
+          <TextType 
+              text={["<I'm a Frontend Developer./>","<Nice to meet you!/>"]}
+              className="text-4xl font-semibold text-center text-white z-1"
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
+      </div>
      
+    <div className='flex items-center justify-center w-full max-w-[70rem] gap-20 mt-50 relative'>
+      <img src="/avatar.png" className='min-w-[20rem] w-[20rem] h-[20rem] rounded-full object-cover object-center relative z-1' alt="" />
+      <p className='text-white text-xl'> I am an experienced Frontend Developer over 4 years of expertise in creating responsive and user
+      friendly web applications. I specialize in HTML, CSS, JavaScript, React.js and Next.js have a proven
+      track record of delivering high-quality projects on time. I excel at collaborating with cross-functional
+      teams to design and implement innovative solutions that enhance user experience.</p>
+    </div>
+      
+    </div>
+    
     </div>
   )
 }
