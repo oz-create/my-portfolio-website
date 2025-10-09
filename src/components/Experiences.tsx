@@ -80,8 +80,8 @@ export default function Experiences() {
               </div>
             
           </SpotlightCard>
-            <img src="/coding-render.png" className='w-[25rem] absolute top-25 left-35' alt="" />
-            <img src="/coding-render-2.png" className='absolute w-[25rem] bottom-25 right-35' alt="" />
+            <img src="/coding-render-3.png" className='w-[25rem] absolute top-20 left-40' alt="" />
+            <img src="/coding-render-2.png" className='absolute w-[25rem] bottom-30 right-35' alt="" />
         </div>
       </div>
   )
