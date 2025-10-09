@@ -126,7 +126,8 @@
   justify-content: center;
   pointer-events: none;
   z-index: 20;
-  background-color: #000000;
+  backdrop-filter: blur(12px);
+
 }
 
 .bubble-menu-items.fixed {

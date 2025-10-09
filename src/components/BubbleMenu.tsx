@@ -220,6 +220,10 @@ export default function BubbleMenu({
                       '--hover-color': item.hoverStyles?.textColor || menuContentColor
                     } as CSSProperties
                   }
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    onMenuClick?.(false);
+                  }}
                   ref={el => {
                     if (el) bubblesRef.current[idx] = el;
                   }}
