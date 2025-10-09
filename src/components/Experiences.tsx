@@ -1,10 +1,9 @@
-import React from 'react'
 import SpotlightCard from './SpotlightCard'
 
 export default function Experiences() {
   return (
-       <div id='experience' className='flex flex-col items-center justify-center gap-5 pt-20 z-1'>
-        <h1 className='text-white text-4xl text-left'>Work Experiences</h1>
+       <div id='experience' className='flex flex-col items-center justify-center gap-5 pt-20 z-1 relative'>
+        <h1 className='text-white text-4xl text-left font-bold'>Work Experiences</h1>
         <div className='flex items-center gap-5 experience-cards-container'>
           <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(49, 21, 101, 1)">
             <div className='flex flex-col items-center justify-start z-1 relative w-full max-w-[40rem]'>
@@ -81,6 +80,8 @@ export default function Experiences() {
               </div>
             
           </SpotlightCard>
+            <img src="/coding-render.png" className='w-[25rem] absolute top-25 left-35' alt="" />
+            <img src="/coding-render-2.png" className='absolute w-[25rem] bottom-25 right-35' alt="" />
         </div>
       </div>
   )

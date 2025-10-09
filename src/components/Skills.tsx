@@ -1,4 +1,3 @@
-import React from 'react'
 import GlassIcons from './GlassIcons'
 import { FaBootstrap, FaCss3Alt, FaHtml5, FaSass } from 'react-icons/fa';
 import { SiJavascript, SiReact, SiTypescript } from 'react-icons/si';

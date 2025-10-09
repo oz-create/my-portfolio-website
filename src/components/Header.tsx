@@ -1,4 +1,3 @@
-import React from 'react'
 import TextType from './TextType'
 import SplitText from './SplitText'
 

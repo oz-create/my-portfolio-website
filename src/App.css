@@ -11,8 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 .experience-cards-container .card-spotlight:nth-child(1){
-  margin-top: 0rem;
+  margin-top: 20rem;
 }
 .experience-cards-container .card-spotlight:nth-child(2){
-  margin-top: 30rem;
+  margin-top: -40rem;
 }

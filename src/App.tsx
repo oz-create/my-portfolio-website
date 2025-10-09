@@ -5,6 +5,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experiences from './components/Experiences';
+import Education from './components/Education';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
       <About />
       <Skills />
       <Experiences />
-   
+      <Education />
     </div>
     
     </div>
