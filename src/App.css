@@ -10,3 +10,9 @@ body{
 html {
   scroll-behavior: smooth;
 }
+.experience-cards-container .card-spotlight:nth-child(1){
+  margin-top: 0rem;
+}
+.experience-cards-container .card-spotlight:nth-child(2){
+  margin-top: 30rem;
+}
