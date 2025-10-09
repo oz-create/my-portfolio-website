@@ -1,6 +1,8 @@
+import { FiBarChart2, FiBook, FiCloud, FiEdit, FiFileText, FiHeart } from 'react-icons/fi';
 import './App.css'
 import Aurora from './components/Aurora'
 import BubbleMenu from './components/BubbleMenu';
+import GlassIcons from './components/GlassIcons';
 import GooeyNav from './components/GooeyNav';
 import ProfileCard from './components/ProfileCard';
 import Ribbons from './components/Ribbons';
@@ -9,6 +11,10 @@ import SplitText from './components/SplitText'
 import StarBorder from './components/StarBorder';
 import TextType from './components/TextType';
 import logo from '/logo-oz.png'
+import { FaBootstrap, FaCss3Alt, FaHtml5, FaReact, FaSass } from 'react-icons/fa';
+import { SiJavascript, SiReact, SiTypescript } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { RiTailwindCssFill } from 'react-icons/ri';
 
 function App() {
   const items = [
@@ -42,6 +48,18 @@ function App() {
   }
 ];
 
+const icons = [
+  { icon: <FaHtml5 className='text-3xl'/>, color: '#311565', label: 'HTML5' },
+  { icon: <FaCss3Alt className='text-3xl' />, color: '#311565', label: 'CSS3' },
+  { icon: <SiJavascript className='text-3xl' />, color: '#311565', label: 'JavaScript' },
+  { icon: <SiTypescript className='text-3xl' />, color: '#311565', label: 'TypeScript' },
+  { icon: <SiReact className='text-3xl' />, color: '#311565', label: 'React.js' },
+  { icon: <TbBrandNextjs className='text-3xl' />, color: '#311565', label: 'Next.js' },
+  { icon: <RiTailwindCssFill className='text-3xl' />, color: '#311565', label: 'TailwindCSS' },
+  { icon: <FaBootstrap className='text-3xl' />, color: '#311565', label: 'Bootstrap' },
+  { icon: <FaSass className='text-3xl' />, color: '#311565', label: 'Sass/Scss' },
+];
+
 
   return (
     <div className='relative w-full overflow-x-hidden'>
@@ -60,7 +78,7 @@ function App() {
  
      
     <BubbleMenu
-      logo={<img src="/logo-oz.png" alt="Logo" className="w-30 h-30 object-contain" />}
+      logo={<img src="/OS-LOGO.png" alt="Logo" className="w-30 h-30 object-contain" />}
       items={items}
       menuAriaLabel="Toggle navigation"
       menuBg="#ffffff"
@@ -99,16 +117,17 @@ function App() {
       {/* <img src="/avatar.png" className='min-w-[20rem] w-[20rem] h-[20rem] rounded-full object-cover object-center relative z-1' alt="" /> */}
       <ProfileCard
         name=""
-        title=""
+        title="Frontend Developer"
         handle="ozlem-engin"
         status=""
         contactText="Contact Me"
-        avatarUrl="/avatar2.png"
+        avatarUrl="/avatar.png"
         showUserInfo={true}
         enableTilt={true}
         enableMobileTilt={false}
         iconUrl='/iconpattern.png'
         grainUrl='/grain.webp'
+        behindGradient='linear-gradient(135deg, #7CFF67, #B19EFF, #5227FF)'
         onContactClick={() => window.open('https://www.linkedin.com/in/ozlem-engin', '_blank')}
       />
       <div className="flex flex-col justify-center items-start gap-10">
@@ -120,15 +139,21 @@ function App() {
         as="a"
         className="custom-class cursor-pointer hover:brightness-200 transition-all duration-500"
         color="#5227FF"
-        speed="5s"
+        speed="3s"
         href="/Ozlem_Engin_Sagir_Dev_CV.pdf"
         download={true}
+        thickness={3}
       >
       Download Resume
       </StarBorder>
       </div>
-      
+    
     </div>
+      <div className='h-auto relative flex flex-col justify-center items-center' >
+        <h1 className='text-white text-2xl'>The skills, tools and technologies I am really good at:</h1>
+        <GlassIcons items={icons} className="custom-class text-white"/>
+        <img src="/tech-bg.png" alt="" />
+      </div>
       <div id='experience' className='flex flex-col items-center justify-center gap-5 pt-20 z-1'>
         <h1 className='text-white text-4xl text-left'>Work Experiences</h1>
         <div>
@@ -136,7 +161,8 @@ function App() {
               as="div"
               className="custom-class flex flex-col items-center justify-start"
               color="#5227FF"
-              speed="5s"
+              speed="10s"
+              thickness={5}
             >
             <h1 className='text-white text-lg font-bold text-left'>Adcropper, Istanbul/Remote  - January 2022 – September 2025</h1>
             <h2 className='text-white text-lg text-left'>Frontend Developer</h2>
