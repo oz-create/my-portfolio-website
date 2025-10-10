@@ -17,6 +17,7 @@ export default async function handler(req, res) {
       },
     });
 
+    
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: process.env.EMAIL_TO, // senin adresin
