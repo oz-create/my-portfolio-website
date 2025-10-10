@@ -35,9 +35,9 @@ export default function Projects() {
     ]
  
   return (
-    <div id='projects' className="w-full flex flex-col justify-center items-center gap-15 mt-20 h-auto z-1 relative">
+    <div id='projects' className="w-full flex flex-col justify-center items-center gap-15 lg:mt-20 h-auto z-1 relative px-10">
         <h1 className='text-white text-4xl text-left font-bold'>Projects</h1>
-        <div className="flex items-center justify-center gap-10">
+        <div className="flex items-center justify-center gap-10 flex-wrap">
             {
                 projects.map((project,index) => {
                     return (

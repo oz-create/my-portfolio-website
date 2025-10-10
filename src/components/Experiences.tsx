@@ -6,7 +6,7 @@ import { IoChevronDown } from "react-icons/io5";
 
 export default function Experiences() {
   return (
-       <div id='experience' className='flex flex-col items-center justify-center gap-10 z-1 relative'>
+       <div id='experience' className='flex flex-col items-center justify-center gap-10 z-1 relative px-10'>
         <h1 className='text-white text-4xl text-left font-bold'>Work Experiences</h1>
         <div className='flex flex-col items-center gap-5 experience-cards-container'>
           <div className='relative w-full max-w-[70rem] accordion-container flex items-center justify-center'>
@@ -68,8 +68,8 @@ export default function Experiences() {
                       </div>
                   </AccordionDetails>
                 </Accordion>
-                <img src="/coding-render-3.png" className='w-[14rem] absolute bottom-[-14rem] left-15' alt="" />
-                <img src="/coding-render-2.png" className='absolute w-[12rem] top-[-6rem] right-[-15rem]' alt="" />
+                <img src="/coding-render-3.png" className='w-[14rem] absolute bottom-[-14rem]  left-15 lg:block hidden' alt="" />
+                <img src="/coding-render-2.png" className='absolute w-[12rem] top-[-6rem] right-[-15rem] lg:block hidden' alt="" />
           </div>
           <div className='relative w-full max-w-[70rem] accordion-container flex items-center justify-center'>
               <Accordion sx={{

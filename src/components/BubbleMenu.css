@@ -233,6 +233,7 @@
   will-change: transform, opacity;
   height: 1.2em;
   line-height: 1.2;
+  font-size: 3rem;
 }
 
 @media (max-width: 899px) {
@@ -266,5 +267,8 @@
 
   .bubble-menu-items .pill-link:active {
     transform: scale(0.94);
+  }
+  .bubble-menu-items .pill-link .pill-label {
+    font-size: 1.8rem;
   }
 }

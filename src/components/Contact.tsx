@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { IoIosMail } from "react-icons/io";
 import DotGrid from './DotGrid'
-import ContactForm from './ContactForm';
 
 export default function Contact() {
   return (
@@ -19,9 +18,6 @@ export default function Contact() {
             className='absolute top-0'
         />
         <div className='absolute flex items-center justify-center gap-10'>
-            
-            <ContactForm />
-            
             <div className='flex flex-col items-center justify-center'>
                 <h1 className='text-white text-4xl text-left font-bold'>Contact Me!</h1>
                 <div className='flex items-center justify-center gap-15 mt-20'>

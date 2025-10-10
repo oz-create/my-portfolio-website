@@ -7,6 +7,7 @@ body{
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 .experience-cards-container .accordion-container:nth-child(1){
   margin-left: -20rem !important;
@@ -16,4 +17,33 @@ html {
 }
 .css-1tl1buc-MuiPaper-root-MuiAccordion-root{
   border-radius: 1rem !important;
+}
+@media (max-width: 1500px) {
+  html{
+    font-size: 15px;
+  }
+}
+@media (max-width: 1300px) {
+  html{
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  html{
+    font-size: 13px;
+  }
+
+}
+@media (max-width: 1024px){
+.experience-cards-container .accordion-container:nth-child(1){
+  margin-left: 0rem !important;
+}
+.experience-cards-container .accordion-container:nth-child(2){
+  margin-right: 0rem !important;
+}
+}
+@media (max-width: 375px){
+   html{
+    font-size: 12px;
+  }
 }
