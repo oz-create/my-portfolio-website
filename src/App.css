@@ -1,6 +1,4 @@
 *,*::after,*::before {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 body{
@@ -10,9 +8,12 @@ body{
 html {
   scroll-behavior: smooth;
 }
-.experience-cards-container .card-spotlight:nth-child(1){
-  margin-top: 20rem;
+.experience-cards-container .accordion-container:nth-child(1){
+  margin-left: -20rem !important;
 }
-.experience-cards-container .card-spotlight:nth-child(2){
-  margin-top: -40rem;
+.experience-cards-container .accordion-container:nth-child(2){
+  margin-right: -20rem !important;
+}
+.css-1tl1buc-MuiPaper-root-MuiAccordion-root{
+  border-radius: 1rem !important;
 }

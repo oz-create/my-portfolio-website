@@ -6,11 +6,13 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Experiences from './components/Experiences';
 import Education from './components/Education';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
 
   return (
-    <div className='relative w-full overflow-x-hidden'>
+    <div className='relative w-full overflow-x-clip'>
       <div className='w-full h-screen fixed top-0'>
         <Aurora 
           colorStops={["#4D7DFE", "#7C5DA0","#311565"]}
@@ -26,7 +28,10 @@ function App() {
       <Skills />
       <Experiences />
       <Education />
+      <Projects />
+      <Contact />
     </div>
+  
     
     </div>
   )

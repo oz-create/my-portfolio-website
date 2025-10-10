@@ -4,7 +4,7 @@ import StarBorder from './StarBorder'
 
 export default function About() {
   return (
-    <div className='flex items-center justify-center w-full max-w-[70rem] gap-20 mt-50 relative'>
+    <div className='flex items-center justify-center w-full max-w-[70rem] gap-20 relative'>
       <ProfileCard
         name=""
         title="Frontend Developer"
