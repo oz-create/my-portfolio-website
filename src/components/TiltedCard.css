@@ -54,10 +54,11 @@
   will-change: transform;
   transform: translateZ(30px);
   background: linear-gradient(to bottom, transparent 10%, rgba(255,255,255,1) 30%);
-  height: 15rem;
+  height: 16rem;
   width: calc(100% - 1rem);
-  padding-top: 3rem;
   border-radius: 1rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 .tilted-card-caption {

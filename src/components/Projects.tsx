@@ -1,15 +1,16 @@
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import TiltedCard from "./TiltedCard";
 import { SiMui, SiRedux, SiTypescript } from "react-icons/si";
-import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
+import { FaCss3Alt, FaGithub, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import StarBorder from "./StarBorder";
 
 
 export default function Projects() {
     const projects = [
         {
             title: "Next.js Movie Website",
-            description: "A movie website built with Next.js, featuring a sleek design and seamless navigation. Explore a vast collection of movies, view detailed information, and enjoy a user-friendly experience.",
+            description: "This project, which I developed using Next.js and TypeScript, allows users to discover movies, get information on detail pages, and filter by categories.",
             demoUrl: "https://next-js-movie-website-wyrh.vercel.app/",
             githubUrl: "https://github.com/oz-create/next.js-movie-website",
             imageUrl: "/next.js-movie-website.png",
@@ -17,7 +18,7 @@ export default function Projects() {
         },
         {
             title: "React E-Commerce Website",
-            description: "A movie website built with Next.js, featuring a sleek design and seamless navigation. Explore a vast collection of movies, view detailed information, and enjoy a user-friendly experience.",
+            description: "In the e-commerce project I developed using react.js, users can perform operations such as product search, filtering, and adding to the cart.",
             demoUrl: "https://react-ecommerce-website-chi.vercel.app/",
             githubUrl: "https://github.com/oz-create/react-ecommerce-website",
             imageUrl: "/react-ecommerce-website.png",
@@ -25,7 +26,7 @@ export default function Projects() {
         },
         {
             title: "HTML,CSS E-Commerce Website",
-            description: "A movie website built with Next.js, featuring a sleek design and seamless navigation. Explore a vast collection of movies, view detailed information, and enjoy a user-friendly experience.",
+            description: "This project, which I developed using HTML,CSS and SCSS, includes sample pages of an e-commerce site and is fully responsive.",
             demoUrl: "https://e-commerce-web-site-design.vercel.app/",
             githubUrl: "https://github.com/oz-create/e-commerce-web-site-design",
             imageUrl: "/ecommerce-website.png",
@@ -34,7 +35,7 @@ export default function Projects() {
     ]
  
   return (
-    <div id='projects' className="w-full flex flex-col justify-center items-center gap-10 mt-20 h-auto z-1 relative">
+    <div id='projects' className="w-full flex flex-col justify-center items-center gap-15 mt-20 h-auto z-1 relative">
         <h1 className='text-white text-4xl text-left font-bold'>Projects</h1>
         <div className="flex items-center justify-center gap-10">
             {
@@ -61,7 +62,7 @@ export default function Projects() {
                                      <p className="tilted-card-demo-text text-xs">
                                         {project.description}
                                     </p>
-                                    <div className="flex items-center justify-center gap-5">
+                                    <div className="flex items-center justify-center gap-5 my-1">
                                         {
                                             project.technologies.map((icon) => {
                                                 return icon
@@ -81,6 +82,21 @@ export default function Projects() {
             }
            
         </div>
+            <StarBorder
+                as="a"
+                className="custom-class cursor-pointer hover:brightness-200 transition-all duration-500"
+                color="#4D7DFE"
+                speed="3s"
+                href="https://github.com/oz-create"
+                target="_blank"
+                thickness={3}
+            >
+                <div className="flex items-center gap-2">
+                    <p>See More On My GitHub</p>        
+                    <FaGithub className="text-2xl"/>
+                </div>
+          
+            </StarBorder>
     </div>
    
   )
