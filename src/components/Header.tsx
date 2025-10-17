@@ -6,7 +6,7 @@ export default function Header() {
     <div className='flex flex-col justify-center items-center gap-5 px-10'>
          <SplitText
             text="Hello, I'm Özlem Engin Sağır!"
-            className="md:text-5xl text-3xl font-semibold text-center text-white leading-10 mb-2"
+            className="md:text-5xl text-3xl font-semibold text-center text-white sm:leading-15 leading-10"
             delay={100}
             duration={0.6}
             ease="power3.out"
