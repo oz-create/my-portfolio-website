@@ -13,7 +13,7 @@ export default function Experiences() {
                <Accordion sx={{
                     background: "transparent",
                     border: "1px solid rgb(49, 21, 101)",
-                    borderRadius: "1rem",
+                    borderRadius: "1rem !important",
                     boxShadow: "none",
                     overflow: "hidden", 
                     '&::before': {
@@ -75,7 +75,7 @@ export default function Experiences() {
               <Accordion sx={{
                     background: "transparent",
                     border: "1px solid rgb(49, 21, 101)",
-                    borderRadius: "1rem",
+                    borderRadius: "1rem !important",
                     boxShadow: "none",
                     overflow: "hidden", 
                     '&::before': {
