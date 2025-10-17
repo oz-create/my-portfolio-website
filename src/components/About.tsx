@@ -29,7 +29,7 @@ export default function About() {
         className="custom-class cursor-pointer hover:brightness-200 transition-all duration-500"
         color="#4D7DFE"
         speed="3s"
-        href="/Ozlem_Engin_Sagir_Dev_CV.pdf"
+        href="/Ozlem_Engin_Sagir_CV.pdf"
         download={true}
         thickness={3}
       >
