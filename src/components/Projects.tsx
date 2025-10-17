@@ -4,6 +4,7 @@ import { SiMui, SiRedux, SiTypescript } from "react-icons/si";
 import { FaCss3Alt, FaGithub, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import StarBorder from "./StarBorder";
+import React from "react";
 
 
 export default function Projects() {
@@ -64,8 +65,8 @@ export default function Projects() {
                                     </p>
                                     <div className="flex items-center justify-center gap-5 my-1">
                                         {
-                                            project.technologies.map((icon) => {
-                                                return icon
+                                            project.technologies.map((icon,index) => {
+                                                return <React.Fragment key={index}>{icon}</React.Fragment> 
                                             })
                                         }
                                     </div>
