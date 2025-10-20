@@ -97,7 +97,7 @@ export default function Experiences() {
                       <b>Website Development:</b> <br />
                         Developed a fully responsive website from scratch, ensuring it adapts
                         seamlessly to various screen sizes and devices, providing an optimal user
-                        experience. <a className='underline' href="https://wallstreetturkish.com/">(https://wallstreetturkish.com/)</a>
+                        experience. <a className='underline' href="https://muvezzi.com/">(muvezzi.com)</a>
                     </p>
                     <p className='text-white text-base text-left'>
                       <b>Frontend Development</b> <br />
