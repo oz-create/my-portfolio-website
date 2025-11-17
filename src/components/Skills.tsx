@@ -1,6 +1,6 @@
 import GlassIcons from './GlassIcons'
 import { FaBootstrap, FaCss3Alt, FaFigma, FaGithub, FaHtml5, FaSass } from 'react-icons/fa';
-import { SiJavascript, SiMui, SiReact, SiTypescript } from 'react-icons/si';
+import { SiAntdesign, SiJavascript, SiMui, SiPostgresql, SiReact, SiReactquery, SiTypescript } from 'react-icons/si';
 import { DiJqueryLogo } from "react-icons/di";
 import { TbBrandNextjs } from 'react-icons/tb';
 import { RiTailwindCssFill } from 'react-icons/ri';
@@ -17,10 +17,12 @@ export default function Skills() {
       { icon: <FaBootstrap className='text-3xl' />, color: '#311565', label: 'Bootstrap' },
       { icon: <FaSass className='text-3xl' />, color: '#311565', label: 'Sass/Scss' },
       { icon: <SiMui className='text-3xl' />, color: '#311565', label: 'Material UI' },
-      { icon: <SiMui className='text-3xl' />, color: '#311565', label: 'Material UI' },
+      { icon: <SiAntdesign className='text-3xl' />, color: '#311565', label: 'Ant Desing' },
+      { icon: <DiJqueryLogo className='text-3xl' />, color: '#311565', label: 'Jquery' },
+      { icon: <SiPostgresql className='text-3xl' />, color: '#311565', label: 'PostgreSQL' },
+      { icon: <SiReactquery className='text-3xl' />, color: '#311565', label: 'React Query' },
       { icon: <FaGithub className='text-3xl' />, color: '#311565', label: 'Git/Github' },
       { icon: <FaFigma className='text-3xl' />, color: '#311565', label: 'Figma' },
-      { icon: <DiJqueryLogo className='text-3xl' />, color: '#311565', label: 'Jquery' },
     ];
   return (
     <div className='h-auto relative flex flex-col justify-center items-center px-10' >
